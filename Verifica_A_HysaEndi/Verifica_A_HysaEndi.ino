@@ -44,7 +44,7 @@ void loop() {
     
 }
 
-    void richiediTempi()
+    void richiediTempi()   //metodo con la quale richiamo i metodi di richiesta
     {
       richieditempoRossoGiallo ();
       richiediempobiancoverde();
