@@ -74,7 +74,7 @@ void loop() {
   }
 
 
-  void alternanzaLed ()
+  void alternanzaLed ()   //scrittura del metodo per scrivere il codice definitivo in modo piu semplice
   {
      digitalWrite (rosso,HIGH);
     digitalWrite (giallo,HIGH);
