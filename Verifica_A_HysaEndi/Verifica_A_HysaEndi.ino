@@ -14,6 +14,14 @@ void setup() {
   bianco = 8;
   verde = 10;
 
+
+  pinMode (rosso,OUTPUT);
+  pinMode (giallo,OUTPUT);
+  pinMode (bianco,OUTPUT);
+  pinMode (verde,OUTPUT);
+
+  Serial.begin (9600);
+
 }
 
 void loop() {
