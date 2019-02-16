@@ -3,6 +3,8 @@ int rosso;      //dichiarazione variabili
 int giallo;
 int bianco;
 int verde;
+int temporossogiallo;
+int tempobiancoverde;
 
 
 
@@ -26,5 +28,23 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+    
 }
+
+  void richieditempoRossoGiallo ()
+  {
+    Serial.println ("Quanto deve durare il rosso e il giallo? (input in ms)");
+    while (Serial.available() == 0) {};
+    String input = Serial.readString ();
+    temporossogiallo = input.toInt();
+    
+  }
+
+  void richiediempobiancoverde()
+  {
+    Serial.println ("Quanto deve durare il bianco e il verde? (input in ms)");
+    while (Serial.available() == 0) {};
+    String input = Serial.readString ();
+    tempobiancoverde= input.toInt();
+  }
+
